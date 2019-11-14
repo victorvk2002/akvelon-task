@@ -1,6 +1,7 @@
 # akvelon-task
 
 ## needed
+ - python3
  - git
  - venv
 
