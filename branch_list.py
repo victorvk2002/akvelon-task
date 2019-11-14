@@ -23,7 +23,7 @@ for obj in response.json():
   ft = parse(obj['lastBuild']['finishTime'])
   duration = ft - st
   id = obj['lastBuild']['id']
-  link = f'python3 build_logs.py {id} --token %secret_key%'
+  link = f'python3 build_logs.py {id} --token=%secret_key%'
   ar.append([name, status, duration, link])
 
 print(tabulate(ar, headers=['Branch name', 'Build status', 'Duration', 'Link to build log'], tablefmt='orgtbl'))
